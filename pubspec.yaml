@@ -1,0 +1,42 @@
+name: quicktask
+description: "A simple task management app built with Flutter and Back4App."
+# The following line prevents the package from being accidentally published to pub.dev.
+publish_to: 'none'
+
+# Version and build number
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Commonly used dependencies
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  parse_server_sdk_flutter: ^9.0.0
+  intl: ^0.18.0
+
+  # # Additional dependencies
+  # idb_shim: ^2.3.2
+  # sembast: ^3.7.5+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+      - assets/logo.png
+
+  # Uncomment and configure this section if you have assets like images, fonts, etc.
+  # assets:
+  #   - images/
+  #   - fonts/
+
+dependency_overrides:
+  sembast: 3.7.5
